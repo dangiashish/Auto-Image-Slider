@@ -6,7 +6,7 @@ Android auto image slide library. Compatible for Java and Kotlin,
 #### Supported Android SDK : 24 or above
 
 ### Preview
-<img src="preview.gif" alt="gif" style="width:200px; height:400px"/>
+<img src="https://github.com/DangiAshish/Auto-Image-Slider/blob/8ce39ce03c180c2d4be72bff4f62993c8d18e6dc/preview.gif" alt="gif" style="width:400px; height:200px"/>
 
 ### Gradle
 
