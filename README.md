@@ -5,6 +5,9 @@ Android auto image slide library. Compatible for Java and Kotlin,
 
 #### Supported Android SDK : 24 or above
 
+### Preview
+<img src="https://github.com/DangiAshish/Google-Direction-Api/blob/b7cf938dda7465982f6bce0d78fb5408bc90a644/GIF_20230221_124204.gif" alt="gif" style="width:200px; height:400px"/>
+
 ### Gradle
 
 Add dependency in your `build.gradle` (project-level) file :
