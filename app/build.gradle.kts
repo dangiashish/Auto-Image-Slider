@@ -29,6 +29,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            multiDexEnabled = true
+        }
+        getByName("debug") {
+            multiDexEnabled = true
         }
     }
     compileOptions {
