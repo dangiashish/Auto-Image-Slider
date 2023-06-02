@@ -33,7 +33,7 @@ Add dependency in your `build.gradle` (module-level) file :
 ```groovy
 dependencies{
 
-    implementation 'com.github.DangiAshish:autoimageslider:1.0.0'
+    implementation 'com.github.DangiAshish:Auto-Image-Slider:1.0.2'
 }
 ```
 ### Code Snippets :
