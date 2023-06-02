@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutoImageSlider">
+        <attr name="ais_auto_sliding" format="boolean" />
+        <attr name="ais_corner_radius" format="integer" />
+        <attr name="ais_time_interval" format="integer" />
+        <attr name="ais_slide_delay" format="integer" />
+        <attr name="ais_placeholder" format="reference" />
+        <attr name="ais_exception_image" format="reference" />
+        <attr name="ais_selected_indicator" format="reference" />
+        <attr name="ais_unselected_indicator" format="reference" />
+        <attr name="ais_title_background" format="reference" />
+        <attr name="ais_text_align" format="string"/>
+        <attr name="ais_indicator_align" format="string"/>
+        <attr name="ais_dots_visible" format="boolean" />
+        <attr name="ais_title_color" format="reference"/>
+        <attr name="ais_description_color" format="string"/>
+        <attr name="ais_indicator_style" format="string"/>
+
+
+    </declare-styleable>
+
+    <attr name="colorPrimary" format="color"/>
+
+</resources>
