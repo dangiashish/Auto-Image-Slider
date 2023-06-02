@@ -3,6 +3,8 @@ Android auto image slide library. Compatible for Java and Kotlin,
 
 [![](https://jitpack.io/v/DangiAshish/Auto-Image-Slider.svg)](https://jitpack.io/#DangiAshish/Auto-Image-Slider)
 
+#### Supported Android SDK : 24 or above
+
 ### Gradle
 
 Add dependency in your `build.gradle` (project-level) file :
