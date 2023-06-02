@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710764ef-a0b8-4510-b8d7-99e4ebfefaf3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoimageslider/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/autoimageslider/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
     "git-widget-placeholder": "master",
     "last_directory_selection": "E:/Android Studio Projects/AndroidImageSlider/app/src/main/res/values",
     "last_opened_file_path": "E:/Android Studio Projects/AndroidImageSlider/autoimageslider/src/main/res/drawable",
-    "project.structure.last.edited": "Dependencies",
+    "project.structure.last.edited": "Build Variants",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap"
@@ -76,6 +77,7 @@
 }]]></component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
+    <option name="BUILD_VARIANTS_TAB" value="Build Types" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
