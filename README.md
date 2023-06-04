@@ -54,7 +54,6 @@ dependencies{
         android:layout_margin="10dp"
         app:ais_auto_sliding="true"
         app:ais_corner_radius="10"
-        app:ais_dots_visible="false"
         app:ais_indicator_align="@string/left"
         app:ais_placeholder="@drawable/placeholder_default_loading"
         app:ais_time_interval="5000"
