@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() , ItemsListener {
         // set the added images inside the AutoImageSlider
         autoImageSlider.setImageList(autoImageList, ImageScaleType.FIT)
         
-        // set any default animation or custom animation (setDefaultAnimation(ImageAnimationTypes.ZOOM_IN))
+        // set any default animation or custom animation (setSlideAnimation(ImageAnimationTypes.ZOOM_IN))
         autoImageSlider.setDefaultAnimation()
 
         // handle click event on item click
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements ItemsListener {
         // set the added images inside the AutoImageSlider
         autoImageSlider.setImageList(autoImageList, ImageScaleType.FIT);
         
-        // set any default animation or custom animation (setDefaultAnimation(ImageAnimationTypes.ZOOM_IN))
+        // set any default animation or custom animation (setSlideAnimation(ImageAnimationTypes.ZOOM_IN))
         autoImageSlider.setDefaultAnimation();
 
         // handle click event on item click
