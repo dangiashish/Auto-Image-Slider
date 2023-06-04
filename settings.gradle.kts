@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Image Slider"
+rootProject.name = "AutoImageSlider"
 include(":app")
 include(":autoimageslider")
