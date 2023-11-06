@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements ItemsListener {
 ```
 
 ### Licence
-```groovy
+```
 MIT License
 
 Copyright (c) 2023 Ashish Dangi
