@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/xml_data_extraction_rules.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/xml_backup_rules.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/drawable_ashish_text_bg.xml.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/drawable/ashish_text_bg.xml"
+    },
+    {
+        "merged": "com.codebyashish.autoimageslider.app-merged_res-28:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.codebyashish.autoimageslider.app-main-29:/mipmap-xhdpi/ic_launcher_round.webp"
+    }
+]

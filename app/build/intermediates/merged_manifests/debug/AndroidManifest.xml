@@ -9,6 +9,7 @@
         android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <permission
         android:name="com.codebyashish.autoimageslider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -27,7 +28,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.AndroidImageSlider" >
         <activity
             android:name="com.codebyashish.autoimageslider.MainActivity"

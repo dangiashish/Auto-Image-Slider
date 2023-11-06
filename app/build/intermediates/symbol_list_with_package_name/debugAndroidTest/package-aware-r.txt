@@ -1,3 +1,0 @@
-com.codebyashish.autoimageslider.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

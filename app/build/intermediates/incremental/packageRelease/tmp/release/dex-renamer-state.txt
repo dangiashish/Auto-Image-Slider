@@ -1,0 +1,4 @@
+#Mon Nov 06 15:08:06 IST 2023
+base.0=E\:\\Android Studio Projects\\AndroidImageSlider\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

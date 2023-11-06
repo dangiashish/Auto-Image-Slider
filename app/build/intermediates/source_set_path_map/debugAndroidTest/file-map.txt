@@ -1,6 +1,0 @@
-com.codebyashish.autoimageslider.test.app-annotation-experimental-1.3.0-0 C:\Users\ashis\.gradle\caches\transforms-3\4ec49ad901ad5ab4365ff8a20224719f\transformed\annotation-experimental-1.3.0\res
-com.codebyashish.autoimageslider.test.app-core-1.5.0-1 C:\Users\ashis\.gradle\caches\transforms-3\ae480e14241decd2aea626abb7e3971a\transformed\core-1.5.0\res
-com.codebyashish.autoimageslider.test.app-androidTest-2 E:\Android Studio Projects\AndroidImageSlider\app\build\generated\res\resValues\androidTest\debug
-com.codebyashish.autoimageslider.test.app-mergeDebugAndroidTestResources-3 E:\Android Studio Projects\AndroidImageSlider\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.codebyashish.autoimageslider.test.app-mergeDebugAndroidTestResources-4 E:\Android Studio Projects\AndroidImageSlider\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.codebyashish.autoimageslider.test.app-merged_res-5 E:\Android Studio Projects\AndroidImageSlider\app\build\intermediates\merged_res\debugAndroidTest
