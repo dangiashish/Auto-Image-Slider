@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.codebyashish.autoimageslider.app-mergeDebugResources-27:/values-v24/values-v24.xml",
+            "outputFile": "com.codebyashish.autoimageslider.app-mergeDebugResources-26:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\01f0a0380b9bea9f149360eb8613e122\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\8434d5539e1c739b437ce2a0c1e74191\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\da89d61e0484225ebc28c25307599370\\transformed\\material-1.9.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\27381c87c16fc7c9cc0ce0891634306b\\transformed\\material-1.9.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

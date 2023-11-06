@@ -2,8 +2,13 @@ package com.codebyashish.autoimageslider;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,13 +45,13 @@ import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class AutoImageSlider  extends RelativeLayout{
+public class AutoImageSlider extends RelativeLayout {
     private ViewPager viewPager;
     private LinearLayout pagerDots;
     private ViewAdapter viewAdapter;
     private ImageView[] dotsImages;
     private int currentPage = 0;
-    private int imageCount  = 0;
+    private int imageCount = 0;
     private int cornerRadius = 0;
     private long period = 0;
     private long delay = 0;
@@ -64,10 +69,10 @@ public class AutoImageSlider  extends RelativeLayout{
     private ItemsListener itemChangeListener = null;
     private ItemsListener touchListener = null;
     private ItemsListener itemClickListener = null;
-    private boolean noDots = false;
+    private boolean dotsVisible;
     private int titleColor = getResources().getColor(android.R.color.white);
     private int descriptionColor = getResources().getColor(android.R.color.white);
-
+    private int defaultBackground = R.drawable.text_background;
     private View view;
     AttributeSet attributeSet;
     int defStyleAttr = 0;
@@ -88,7 +93,7 @@ public class AutoImageSlider  extends RelativeLayout{
         this.attributeSet = attrs;
         this.context = context;
 
-        view =  LayoutInflater.from(getContext()).inflate(R.layout.layout_slider_image, this, true);
+        view = LayoutInflater.from(getContext()).inflate(R.layout.layout_slider_image, this, true);
         viewPager = findViewById(R.id.view_pager);
         pagerDots = findViewById(R.id.pager_dots);
 
@@ -116,7 +121,7 @@ public class AutoImageSlider  extends RelativeLayout{
                 R.drawable.indicator_unselected_dash
         );
 
-        if (Objects.equals(typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_style), getResources().getString(R.string.style_dash))){
+        if (Objects.equals(typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_style), getResources().getString(R.string.style_dash))) {
             selectedDot = typedArray.getResourceId(
                     R.styleable.AutoImageSlider_ais_selected_indicator,
                     R.drawable.indicator_selected_dash
@@ -127,7 +132,7 @@ public class AutoImageSlider  extends RelativeLayout{
             );
         }
 
-        if (Objects.equals(typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_style), getResources().getString(R.string.style_dot))){
+        if (Objects.equals(typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_style), getResources().getString(R.string.style_dot))) {
             selectedDot = typedArray.getResourceId(
                     R.styleable.AutoImageSlider_ais_selected_indicator,
                     R.drawable.indicator_selected_dot
@@ -139,37 +144,34 @@ public class AutoImageSlider  extends RelativeLayout{
             );
         }
 
-        titleBackground = typedArray.getResourceId(
-                R.styleable.AutoImageSlider_ais_title_background,
-                R.drawable.text_background
-        );
+        titleBackground = typedArray.getResourceId(R.styleable.AutoImageSlider_ais_title_background, defaultBackground);
 
-        noDots = typedArray.getBoolean(R.styleable.AutoImageSlider_ais_dots_visible, false);
+        dotsVisible = typedArray.getBoolean(R.styleable.AutoImageSlider_ais_dots_visible, true);
 
-        if (typedArray.getString(R.styleable.AutoImageSlider_ais_text_align) != null){
+        if (typedArray.getString(R.styleable.AutoImageSlider_ais_text_align) != null) {
             textAlign = typedArray.getString(R.styleable.AutoImageSlider_ais_text_align);
         }
 
-        if (typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_align) != null){
+        if (typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_align) != null) {
             indicatorAlign = typedArray.getString(R.styleable.AutoImageSlider_ais_indicator_align);
         }
 
-        if (typedArray.getString(R.styleable.AutoImageSlider_ais_title_color) != null){
+        if (typedArray.getString(R.styleable.AutoImageSlider_ais_title_color) != null) {
             titleColor = Integer.parseInt(typedArray.getString(R.styleable.AutoImageSlider_ais_title_color));
         }
 
-        if (typedArray.getString(R.styleable.AutoImageSlider_ais_description_color) != null){
+        if (typedArray.getString(R.styleable.AutoImageSlider_ais_description_color) != null) {
             descriptionColor = Integer.parseInt(typedArray.getString(R.styleable.AutoImageSlider_ais_description_color));
         }
 
     }
 
-    public void setImageList(ArrayList<ImageSlidesModel> arrayList){
-        viewAdapter = new ViewAdapter(context, arrayList, cornerRadius, errorImage, placeholder, titleBackground, textAlign, titleColor, descriptionColor, listener );
+    public void setImageList(ArrayList<ImageSlidesModel> arrayList) {
+        viewAdapter = new ViewAdapter(context, arrayList, cornerRadius, errorImage, placeholder, titleBackground, textAlign, titleColor, descriptionColor, listener);
         setAdapter(arrayList);
     }
 
-    public void setImageList(ArrayList<ImageSlidesModel> arrayList, ImageScaleType scaleType){
+    public void setImageList(ArrayList<ImageSlidesModel> arrayList, ImageScaleType scaleType) {
         viewAdapter = new ViewAdapter(context, arrayList, cornerRadius, errorImage, placeholder, titleBackground, scaleType, textAlign, titleColor, descriptionColor, listener);
         setAdapter(arrayList);
     }
@@ -177,21 +179,21 @@ public class AutoImageSlider  extends RelativeLayout{
     private void setAdapter(ArrayList<ImageSlidesModel> arrayList) {
         viewPager.setAdapter(viewAdapter);
         imageCount = arrayList.size();
-        if (arrayList.size() != 0){
-            if (!noDots){
+        if (arrayList.size() != 0) {
+            if (dotsVisible) {
                 setupDots(arrayList.size());
             }
-            if (autoCycle){
+            if (autoCycle) {
                 startSliding(period);
             }
         }
     }
 
-    public void setDefaultAnimation(){
+    public void setDefaultAnimation() {
         viewPager.setPageTransformer(true, new BackgroundToForeground());
     }
 
-    public void startSlider(){
+    public void startSlider() {
 
     }
 
@@ -243,18 +245,19 @@ public class AutoImageSlider  extends RelativeLayout{
     }
 
 
-
     private void setupDots(int size) {
         pagerDots.setGravity(getAlignment(indicatorAlign));
         pagerDots.removeAllViews();
         dotsImages = new ImageView[size];
+
+        Log.d("TAG", "" + pagerDots.getGravity());
 
         for (int i = 0; i < size; i++) {
             dotsImages[i] = new ImageView(context);
             dotsImages[i].setImageDrawable(ContextCompat.getDrawable(context, unselectedDot));
 
             LayoutParams params = new LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            params.setMargins(10,0,10,0);
+            params.setMargins(10, 0, 10, 0);
             pagerDots.addView(dotsImages[i], params);
 
         }
@@ -264,10 +267,11 @@ public class AutoImageSlider  extends RelativeLayout{
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             }
+
             @Override
             public void onPageSelected(int position) {
                 currentPage = position;
-                for (ImageView dotImage : dotsImages){
+                for (ImageView dotImage : dotsImages) {
                     dotImage.setImageDrawable(ContextCompat.getDrawable(context, unselectedDot));
                 }
                 dotsImages[position].setImageDrawable(ContextCompat.getDrawable(context, selectedDot));
@@ -286,10 +290,12 @@ public class AutoImageSlider  extends RelativeLayout{
         stopSliding();
         scheduleTimer(changeableInterval);
     }
+
     private void stopSliding() {
         swipeTimer.cancel();
         swipeTimer.purge();
     }
+
     private void scheduleTimer(long period) {
         setViewPageScroller(new PageScroller(context));
 
@@ -336,21 +342,21 @@ public class AutoImageSlider  extends RelativeLayout{
     }
 
 
-
-    public void onItemClickListener(ItemsListener listener){
+    public void onItemClickListener(ItemsListener listener) {
         this.itemClickListener = listener;
-        viewAdapter.setItemClickListener(listener );
+        viewAdapter.setItemClickListener(listener);
     }
 
-    public void onItemChangeListener(ItemsListener listener){
-        viewAdapter.setItemClickListener(listener );
+    public void onItemChangeListener(ItemsListener listener) {
+        viewAdapter.setItemClickListener(listener);
     }
 
-    public void onItemTouchListener(ItemsListener listener){
+    public void onItemTouchListener(ItemsListener listener) {
         this.touchListener = listener;
-        viewAdapter.setItemTouchListener(touchListener );
+        viewAdapter.setItemTouchListener(touchListener);
     }
-    public void onItemDoubleTapListener(ItemsListener listener){
-        viewAdapter.setItemDoubleTapListener(listener );
+
+    public void onItemDoubleTapListener(ItemsListener listener) {
+        viewAdapter.setItemDoubleTapListener(listener);
     }
 }

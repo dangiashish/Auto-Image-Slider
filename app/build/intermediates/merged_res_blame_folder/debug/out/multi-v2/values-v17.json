@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.codebyashish.autoimageslider.app-mergeDebugResources-27:/values-v17/values-v17.xml",
+            "outputFile": "com.codebyashish.autoimageslider.app-mergeDebugResources-26:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\01f0a0380b9bea9f149360eb8613e122\\transformed\\appcompat-1.6.1\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\8434d5539e1c739b437ce2a0c1e74191\\transformed\\appcompat-1.6.1\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

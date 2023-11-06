@@ -23,4 +23,8 @@
 
     <attr name="colorPrimary" format="color"/>
 
+    <attr name="LEFT" format="string"/>
+    <attr name="CENTER" format="string"/>
+    <attr name="RIGHT" format="string"/>
+
 </resources>

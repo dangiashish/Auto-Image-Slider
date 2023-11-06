@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.codebyashish.autoimageslider.app-mergeDebugResources-27:/values-v16/values-v16.xml",
+            "outputFile": "com.codebyashish.autoimageslider.app-mergeDebugResources-26:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\01f0a0380b9bea9f149360eb8613e122\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\b2e34340004ff4a5c92727dd384df752\\transformed\\core-1.10.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\8434d5539e1c739b437ce2a0c1e74191\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ashis\\.gradle\\caches\\transforms-3\\a035eff3d0211f5d81be13f93709b311\\transformed\\core-1.10.1\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

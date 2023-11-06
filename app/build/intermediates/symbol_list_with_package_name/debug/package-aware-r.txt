@@ -75,6 +75,9 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+attr CENTER
+attr LEFT
+attr RIGHT
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -2920,6 +2923,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ashish_text_bg
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3775,6 +3779,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string center
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3892,6 +3897,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string right
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

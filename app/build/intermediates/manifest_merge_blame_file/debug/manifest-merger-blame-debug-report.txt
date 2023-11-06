@@ -6,31 +6,29 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml:5:5-66
 11-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\a035eff3d0211f5d81be13f93709b311\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\b2e34340004ff4a5c92727dd384df752\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 14        android:name="com.codebyashish.autoimageslider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\a035eff3d0211f5d81be13f93709b311\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\b2e34340004ff4a5c92727dd384df752\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\a035eff3d0211f5d81be13f93709b311\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\b2e34340004ff4a5c92727dd384df752\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.codebyashish.autoimageslider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\a035eff3d0211f5d81be13f93709b311\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\a035eff3d0211f5d81be13f93709b311\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\b2e34340004ff4a5c92727dd384df752\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\b2e34340004ff4a5c92727dd384df752\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 18
 19    <application
 19-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml:7:5-26:19
 20        android:allowBackup="true"
 20-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\a035eff3d0211f5d81be13f93709b311\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.10.1] C:\Users\ashis\.gradle\caches\transforms-3\b2e34340004ff4a5c92727dd384df752\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 22        android:dataExtractionRules="@xml/data_extraction_rules"
 22-->E:\Android Studio Projects\AndroidImageSlider\app\src\main\AndroidManifest.xml:9:9-65
 23        android:debuggable="true"
@@ -67,33 +65,33 @@
 40        </activity>
 41
 42        <provider
-42-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\31bde05fc3d953dbf7c08097d3915598\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+42-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\825fc71e77e38e5ea70ee6fc537dce78\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
 43            android:name="com.squareup.picasso.PicassoProvider"
-43-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\31bde05fc3d953dbf7c08097d3915598\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+43-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\825fc71e77e38e5ea70ee6fc537dce78\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
 44            android:authorities="com.codebyashish.autoimageslider.com.squareup.picasso"
-44-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\31bde05fc3d953dbf7c08097d3915598\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+44-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\825fc71e77e38e5ea70ee6fc537dce78\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
 45            android:exported="false" />
-45-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\31bde05fc3d953dbf7c08097d3915598\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+45-->[com.squareup.picasso:picasso:2.71828] C:\Users\ashis\.gradle\caches\transforms-3\825fc71e77e38e5ea70ee6fc537dce78\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
 46        <provider
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 48            android:authorities="com.codebyashish.autoimageslider.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 50            <meta-data
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\d51f22b26722d4d70ede12e815f577c1\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ashis\.gradle\caches\transforms-3\134303cae38d4fa79ee6b16443bf8b53\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ashis\.gradle\caches\transforms-3\456cf32986cae33063604ff2026f473b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ashis\.gradle\caches\transforms-3\7f64c94280da4f1b1941c4111877aa70\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ashis\.gradle\caches\transforms-3\456cf32986cae33063604ff2026f473b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ashis\.gradle\caches\transforms-3\7f64c94280da4f1b1941c4111877aa70\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ashis\.gradle\caches\transforms-3\456cf32986cae33063604ff2026f473b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ashis\.gradle\caches\transforms-3\7f64c94280da4f1b1941c4111877aa70\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 56        </provider>
 57    </application>
 58

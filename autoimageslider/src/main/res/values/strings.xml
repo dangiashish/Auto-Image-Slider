@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Android Image Slider</string>
     <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="center">CENTER</string>
     <string name="style_dash">dash</string>
     <string name="style_dot">dot</string>
 </resources>
