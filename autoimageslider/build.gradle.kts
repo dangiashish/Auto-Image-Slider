@@ -57,7 +57,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.codebyashish"
             artifactId = "autoimageslider"
-            version = "1.0.3"
+            version = "1.0.6"
 
             afterEvaluate {
                 from(components["release"])
