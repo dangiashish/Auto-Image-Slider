@@ -7,8 +7,12 @@ Android auto image slide library. Compatible for Java and Kotlin,
 [![](https://img.shields.io/badge/compatible-kotlin-blueviolet)](https://kotlinlang.org/)
 
 
+
+<!-- https://github.com/dangiashish/Auto-Image-Slider/assets/70362030/86b9346d-441d-4124-8276-d35779f334ce 
+
 ### Preview
-<img src="https://github.com/DangiAshish/Auto-Image-Slider/blob/8ce39ce03c180c2d4be72bff4f62993c8d18e6dc/preview.gif" alt="gif" style="width:400px; height:200px"/>
+<img src="https://github.com/DangiAshish/Auto-Image-Slider/blob/8ce39ce03c180c2d4be72bff4f62993c8d18e6dc/preview.gif" alt="gif" style="width:400px; height:200px"/>-->
+
 
 ### Gradle
 
