@@ -62,6 +62,32 @@ dependencies{
         app:layout_constraintEnd_toEndOf="parent" />
  ```
 
+#### All Params
+
+```groovy
+app:ais_auto_sliding="true"  // Auto slide animation - true | false
+
+app:ais_corner_radius="10"  // Widget Corner Radius - 0 | ....(n)
+
+app:ais_indicator_align="@string/center"  // Dots Indicator Alignment - { LEFT | CENTER | RIGHT }
+
+app:ais_dots_visible="true" // Dots visibiliy - { true | false }
+
+app:ais_time_interval="1000" // Slide interval in milliseconds
+
+app:ais_slide_delay="2000"  // Sliding delay by 2 seconds
+
+app:ais_placeholder="@drawable/placeholder.png" // any placeholder image untill real image load
+
+app:ais_exception_image="@drawable/error.png" // any error or failure image if image could not load
+
+app:ais_title_background="@drawable/custom_background.xml" // any custom drawable as text background
+
+app:ais_text_align="LEFT" // text/title alignment - { LEFT | CENTER | RIGHT }
+
+app:ais_title_color="@@color/white" // assign any color to title
+```
+
 #### Kotlin
 ```groovy
 class MainActivity : AppCompatActivity() , ItemsListener {
