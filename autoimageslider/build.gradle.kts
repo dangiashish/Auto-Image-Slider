@@ -1,4 +1,6 @@
 plugins {
+
+
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("maven-publish")
@@ -57,7 +59,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.codebyashish"
             artifactId = "autoimageslider"
-            version = "1.0.6"
+            version = "1.0.4"
 
             afterEvaluate {
                 from(components["release"])

@@ -43,10 +43,10 @@
             file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
             line="4"
             column="13"
-            startOffset="126"
+            startOffset="129"
             endLine="4"
             endColumn="29"
-            endOffset="142"/>
+            endOffset="145"/>
         <location id="R.drawable.ashish_text_bg"
             file="${:app*debug*sourceProvider*0*resDir*0}/drawable/ashish_text_bg.xml"
             line="2"
@@ -86,10 +86,10 @@
             file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
             line="3"
             column="13"
-            startOffset="82"
+            startOffset="84"
             endLine="3"
             endColumn="30"
-            endOffset="99"/>
+            endOffset="101"/>
     </map>
 
 </incidents>
