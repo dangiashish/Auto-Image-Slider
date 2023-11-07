@@ -89,7 +89,7 @@ app:ais_title_background="@drawable/custom_background.xml" // any custom drawabl
 
 app:ais_text_align="LEFT" // text/title alignment - { LEFT | CENTER | RIGHT }
 
-app:ais_title_color="@@color/white" // assign any color to title
+app:ais_title_color="@color/white" // assign any color to title
 ```
 
 #### Kotlin
