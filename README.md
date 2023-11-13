@@ -5,6 +5,7 @@ Android auto image slide library. Compatible for Java and Kotlin,
 [![](https://img.shields.io/badge/android--sdk-24%2B-green)](https://developer.android.com/tools/sdkmanager)
 [![](https://img.shields.io/badge/compatible-java-blue)](https://www.java.com/)
 [![](https://img.shields.io/badge/compatible-kotlin-blueviolet)](https://kotlinlang.org/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cbda5b77-3ff3-479d-aae4-7e2d79f87567/deploy-status)](https://app.netlify.com/sites/androidimageslider/deploys)
 
 
 
