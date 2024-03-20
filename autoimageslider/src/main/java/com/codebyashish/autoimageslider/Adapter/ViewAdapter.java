@@ -18,6 +18,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.codebyashish.autoimageslider.Enums.ImageActionTypes;
 import com.codebyashish.autoimageslider.Enums.ImageScaleType;
+import com.codebyashish.autoimageslider.ExceptionsClass;
 import com.codebyashish.autoimageslider.Interfaces.ItemsListener;
 import com.codebyashish.autoimageslider.Models.ImageSlidesModel;
 import com.codebyashish.autoimageslider.PicassoTransformation;
@@ -159,7 +160,10 @@ public class ViewAdapter extends PagerAdapter {
 
         ivImage.setOnClickListener(v -> {
             if (listener != null) {
-                listener.onItemClicked(position);
+                    if (model.getClickUrl() != null && model.getImgUrl() != null) {
+                        listener.onItemClicked(position);
+                    }
+
             }
         });
 

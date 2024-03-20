@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710764ef-a0b8-4510-b8d7-99e4ebfefaf3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/autoimagesliderdemo/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoimagesliderdemo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/autoimagesliderdemo/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoimagesliderdemo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/autoimagesliderdemo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoimagesliderdemo/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/autoimagesliderdemo/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoimagesliderdemo/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoimagesliderdemo/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2023_7_43_PM_[Changes]/shelved.patch" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +42,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubDefaultAccount">
@@ -63,31 +60,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;android-custom-viewC:/Users/ashis/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/db045f92188b9d247d5f556866f8861ab68528f0/viewpager-1.0.0-sources.jar!/androidx/viewpager/widget/ViewPager.java_SELECTED&quot;: &quot;ViewPager&quot;,
-    &quot;android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/autoimageslider/AutoImageSlider.java_SELECTED&quot;: &quot;AutoImageSlider&quot;,
-    &quot;android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/imageslider/AutoImageSlider.java_SELECTED&quot;: &quot;AutoImageSlider&quot;,
-    &quot;android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/imageslider/ImageSlider.kt_SELECTED&quot;: &quot;ImageSlider&quot;,
-    &quot;android-custom-viewE:/Android Studio Projects/AndroidImageSlider/autoimageslider/src/main/java/com/codebyashish/autoimageslider/AutoImageSlider.java_SELECTED&quot;: &quot;AutoImageSlider&quot;,
-    &quot;android-custom-viewE:/Android/Sdk/sources/android-33/android/widget/RelativeLayout.java_SELECTED&quot;: &quot;RelativeLayout&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_directory_selection&quot;: &quot;E:/Android Studio Projects/AndroidImageSlider/app/src/main/res/values&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Android Studio Projects/AndroidImageSlider&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android-custom-viewC:/Users/ashis/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/db045f92188b9d247d5f556866f8861ab68528f0/viewpager-1.0.0-sources.jar!/androidx/viewpager/widget/ViewPager.java_SELECTED": "ViewPager",
+    "android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/autoimageslider/AutoImageSlider.java_SELECTED": "AutoImageSlider",
+    "android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/imageslider/AutoImageSlider.java_SELECTED": "AutoImageSlider",
+    "android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/imageslider/ImageSlider.kt_SELECTED": "ImageSlider",
+    "android-custom-viewE:/Android Studio Projects/AndroidImageSlider/autoimageslider/src/main/java/com/codebyashish/autoimageslider/AutoImageSlider.java_SELECTED": "AutoImageSlider",
+    "android-custom-viewE:/Android/Sdk/sources/android-33/android/widget/RelativeLayout.java_SELECTED": "RelativeLayout",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "E:/Android Studio Projects/AndroidImageSlider/app/src/main/res/values",
+    "last_opened_file_path": "E:/Android Studio Projects/AndroidImageSlider/build.gradle.kts",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
     <option name="BUILD_VARIANTS_TAB" value="Build Types" />
@@ -117,6 +115,7 @@
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />

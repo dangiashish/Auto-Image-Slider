@@ -1,11 +1,13 @@
 package com.codebyashish.autoimageslider.Models;
 
+import android.util.Log;
+
 import com.codebyashish.autoimageslider.Enums.ImageScaleType;
 import com.codebyashish.autoimageslider.ExceptionsClass;
 
 public class ImageSlidesModel {
     int imgPath;
-    private String imgUrl;
+    private String imgUrl, clickUrl;
     private ImageScaleType imageScaleType;
     private String  title, description;
 
@@ -23,6 +25,14 @@ public class ImageSlidesModel {
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
+    }
+
+    public String getClickUrl() {
+        return clickUrl;
+    }
+
+    public void setClickUrl(String clickUrl) {
+        this.clickUrl = clickUrl;
     }
 
     public ImageScaleType getImageScaleType() {
@@ -103,6 +113,36 @@ public class ImageSlidesModel {
      *  For image paths from urls or internet
      * */
 
+    public ImageSlidesModel(String imgUrl, String clickUrl, ImageScaleType scaleType) throws ExceptionsClass{
+        if (imgUrl == null || imgUrl.equals("")){
+            throw new ExceptionsClass("Image url cannot be blank or null");
+        }
+        if (clickUrl == null || clickUrl.equals("")){
+            throw new ExceptionsClass("Image url cannot be blank or null");
+        }
+        if (!clickUrl.startsWith("https://") || !clickUrl.startsWith("http://")){
+            throw new ExceptionsClass("Click url is not valid");
+        }
+        this.imgUrl = imgUrl;
+        this.clickUrl = clickUrl;
+        this.imageScaleType = scaleType;
+    }
+
+    public ImageSlidesModel(String imgUrl, String clickUrl, String title, ImageScaleType scaleType) throws ExceptionsClass{
+        Log.d("ashishji", clickUrl+"");
+        if (imgUrl == null || imgUrl.isEmpty()) {
+            throw new ExceptionsClass("Image URL cannot be blank or null");
+        } else if (clickUrl == null || clickUrl.isEmpty()) {
+            throw new ExceptionsClass("Click URL cannot be blank or null");
+        } else if (!clickUrl.startsWith("https://") && !clickUrl.startsWith("http://")) {
+            throw new ExceptionsClass("Click URL is not valid");
+        }
+
+        this.imgUrl = imgUrl;
+        this.clickUrl = clickUrl;
+        this.title = title;
+        this.imageScaleType = scaleType;
+    }
     public ImageSlidesModel(String imgUrl) throws ExceptionsClass{
         if (imgUrl == null || imgUrl.equals("")){
             throw new ExceptionsClass("Image url cannot be blank or null");
