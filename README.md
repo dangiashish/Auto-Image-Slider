@@ -38,7 +38,7 @@ dependencyResolutionManagement {
     }
 }
 ```
-in yout `settings.gradle.kts`
+in your `settings.gradle.kts`
 ```gradle
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -54,7 +54,7 @@ Add dependency in your `build.gradle` (module-level) file :
 ```groovy
 dependencies{
 
-    implementation 'com.github.dangiashish:Auto-Image-Slider:1.0.5'
+    implementation 'com.github.dangiashish:Auto-Image-Slider:1.0.6'
 }
 ```
 ### Code Snippets :
