@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity(), ItemsListener {
 
     private lateinit var listener: ItemsListener
     var autoImageList = ArrayList<ImageSlidesModel>()
-     private lateinit var autoImageSlider: AutoImageSlider
+    private lateinit var autoImageSlider: AutoImageSlider
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +24,21 @@ class MainActivity : AppCompatActivity(), ItemsListener {
         setContentView(R.layout.activity_main)
 
 
-         autoImageSlider =  findViewById(R.id.autoImageSlider)
+        autoImageSlider = findViewById(R.id.autoImageSlider)
         try {
-            autoImageList.add(ImageSlidesModel("https://as1.ftcdn.net/v2/jpg/05/35/47/38/1000_F_535473874_OWCa2ohzXXNZgqnlzF9QETsnbrSO9pFS.jpg",  "title 1"
+            autoImageList.add(
+                ImageSlidesModel(
+                    R.drawable.ic_launcher_foreground, "https://google.com", "Face",
+                    ImageScaleType.FIT
                 )
             )
-            autoImageList.add(ImageSlidesModel("https://as1.ftcdn.net/v2/jpg/05/29/37/22/1000_F_529372232_2Z75XLUgwHQQmtsgeWwGdpdCx4inCPbP.jpg", "https://google.com", "title 2", ImageScaleType.FIT)
+            autoImageList.add(
+                ImageSlidesModel(
+                    "",
+                    "https://google.com",
+                    "title 2",
+                    ImageScaleType.FIT
+                )
             )
             autoImageSlider.setImageList(autoImageList, ImageScaleType.FIT)
             autoImageSlider.setSlideAnimation(ImageAnimationTypes.ZOOM_IN)

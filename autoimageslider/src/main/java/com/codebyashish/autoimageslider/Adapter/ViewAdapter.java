@@ -134,11 +134,16 @@ public class ViewAdapter extends PagerAdapter {
             textBackgroundLayout.setVisibility(View.INVISIBLE);
         }
 
-        Log.i("TAG", model.getTitle() + " " + model.getDescription());
+        Log.i("TAG", model.getTitle() + " " + model.getImgUrl() + " " + model.getDescription());
+        Log.i("TAG", model.getTitle() + " " + model.getImgPath() + " " + model.getDescription());
 
-        RequestCreator picasso;
+        RequestCreator picasso = null;
         if (model.getImgUrl() != null) {
-            picasso = Picasso.get().load(model.getImgUrl());
+            if (model.getImgUrl().equals("")){
+                picasso = Picasso.get().load(R.drawable.placeholder_image_failed);
+            } else {
+                picasso = Picasso.get().load(model.getImgUrl());
+            }
         } else {
             picasso = Picasso.get().load(model.getImgPath());
         }
@@ -163,7 +168,9 @@ public class ViewAdapter extends PagerAdapter {
                     if (model.getClickUrl() != null && model.getImgUrl() != null) {
                         listener.onItemClicked(position);
                     }
-
+                if (model.getClickUrl() != null && model.getImgPath() != 0) {
+                    listener.onItemClicked(position);
+                }
             }
         });
 

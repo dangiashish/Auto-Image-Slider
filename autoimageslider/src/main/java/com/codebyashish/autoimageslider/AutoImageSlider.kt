@@ -36,11 +36,11 @@ import java.util.Timer
 import java.util.TimerTask
 
 class AutoImageSlider @JvmOverloads constructor(
-    var context: Context,
+    var mContext: Context,
     var attributeSet: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : RelativeLayout(
-    context, attributeSet, defStyleAttr
+    mContext, attributeSet, defStyleAttr
 ) {
     private val viewPager: ViewPager
     private val pagerDots: LinearLayout
@@ -150,7 +150,7 @@ class AutoImageSlider @JvmOverloads constructor(
 
     fun setImageList(arrayList: ArrayList<ImageSlidesModel>) {
         viewAdapter = ViewAdapter(
-            context,
+            mContext,
             arrayList,
             cornerRadius,
             errorImage,
@@ -165,8 +165,10 @@ class AutoImageSlider @JvmOverloads constructor(
     }
 
     fun setImageList(arrayList: ArrayList<ImageSlidesModel>, scaleType: ImageScaleType?) {
+        Log.w("HWLL", "setImageList: ${arrayList}" )
+
         viewAdapter = ViewAdapter(
-            context,
+            mContext,
             arrayList,
             cornerRadius,
             errorImage,
@@ -179,6 +181,8 @@ class AutoImageSlider @JvmOverloads constructor(
             listener
         )
         setAdapter(arrayList)
+
+
     }
 
     private fun setAdapter(arrayList: ArrayList<ImageSlidesModel>) {
@@ -240,10 +244,10 @@ class AutoImageSlider @JvmOverloads constructor(
         dotsImages = arrayOfNulls(size)
         Log.d("TAG", "" + pagerDots.gravity)
         for (i in 0 until size) {
-            dotsImages[i] = ImageView(context)
+            dotsImages[i] = ImageView(mContext)
             dotsImages[i]!!.setImageDrawable(
                 ContextCompat.getDrawable(
-                    context, unselectedDot
+                    mContext, unselectedDot
                 )
             )
             val params = LayoutParams(
@@ -254,7 +258,7 @@ class AutoImageSlider @JvmOverloads constructor(
             pagerDots.addView(dotsImages[i], params)
         }
         dotsImages[0]!!
-            .setImageDrawable(ContextCompat.getDrawable(context, selectedDot))
+            .setImageDrawable(ContextCompat.getDrawable(mContext, selectedDot))
         viewPager.addOnPageChangeListener(object : OnPageChangeListener {
             override fun onPageScrolled(
                 position: Int,
@@ -268,13 +272,13 @@ class AutoImageSlider @JvmOverloads constructor(
                 for (dotImage in dotsImages) {
                     dotImage!!.setImageDrawable(
                         ContextCompat.getDrawable(
-                            context, unselectedDot
+                            mContext, unselectedDot
                         )
                     )
                 }
                 dotsImages[position]!!.setImageDrawable(
                     ContextCompat.getDrawable(
-                        context, selectedDot
+                        mContext, selectedDot
                     )
                 )
                 itemChangeListener?.onItemChanged(position)
@@ -295,7 +299,7 @@ class AutoImageSlider @JvmOverloads constructor(
     }
 
     private fun scheduleTimer(period: Long) {
-        setViewPageScroller(PageScroller(context))
+        setViewPageScroller(PageScroller(mContext))
         val handler = Handler()
         val update = Runnable {
             if (currentPage == imageCount) {
@@ -311,7 +315,7 @@ class AutoImageSlider @JvmOverloads constructor(
         }, delay, period)
     }
 
-    fun setViewPageScroller(pageScroller: PageScroller?) {
+    private fun setViewPageScroller(pageScroller: PageScroller?) {
         try {
             val mScroller = ViewPager::class.java.getDeclaredField("mScroller")
             mScroller.isAccessible = true
@@ -325,7 +329,7 @@ class AutoImageSlider @JvmOverloads constructor(
         }
     }
 
-    fun getAlignment(textAlign: String?): Int {
+    private fun getAlignment(textAlign: String?): Int {
         return if (textAlign == "RIGHT") {
             Gravity.END
         } else if (textAlign == "LEFT") {
@@ -337,19 +341,22 @@ class AutoImageSlider @JvmOverloads constructor(
 
     fun onItemClickListener(listener: ItemsListener?) {
         itemClickListener = listener
-        viewAdapter!!.setItemClickListener(listener)
+
+            viewAdapter?.setItemClickListener(listener)
+
+
     }
 
     fun onItemChangeListener(listener: ItemsListener?) {
-        viewAdapter!!.setItemClickListener(listener)
+        viewAdapter?.setItemClickListener(listener)
     }
 
     fun onItemTouchListener(listener: ItemsListener?) {
         touchListener = listener
-        viewAdapter!!.setItemTouchListener(touchListener)
+        viewAdapter?.setItemTouchListener(touchListener)
     }
 
     fun onItemDoubleTapListener(listener: ItemsListener?) {
-        viewAdapter!!.setItemDoubleTapListener(listener)
+        viewAdapter?.setItemDoubleTapListener(listener)
     }
 }
