@@ -54,7 +54,7 @@ Add dependency in your `build.gradle` (module-level) file :
 ```groovy
 dependencies{
 
-    implementation 'com.github.dangiashish:Auto-Image-Slider:1.0.4'
+    implementation 'com.github.dangiashish:Auto-Image-Slider:1.0.5'
 }
 ```
 ### Code Snippets :
