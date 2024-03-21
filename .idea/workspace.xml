@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="710764ef-a0b8-4510-b8d7-99e4ebfefaf3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2023_7_43_PM_[Changes]/shelved.patch" beforeDir="false" />
-    </list>
+    <list default="true" id="710764ef-a0b8-4510-b8d7-99e4ebfefaf3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +18,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\ashis\.android\avd\Pixel_7_Pro_API_34.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-eaf58874-wzSIa7._adb-tls-connect._tcp]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -46,7 +44,7 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="f84fa99d-a735-4e17-ab75-568e74e8f519" />
+    <option name="defaultAccountId" value="0de96927-58e6-4a44-a1ae-17ef861e859d" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,7 +70,6 @@
     "android-custom-viewE:/Android Studio Projects/AndroidImageSlider/app/src/main/java/com/codebyashish/imageslider/ImageSlider.kt_SELECTED": "ImageSlider",
     "android-custom-viewE:/Android Studio Projects/AndroidImageSlider/autoimageslider/src/main/java/com/codebyashish/autoimageslider/AutoImageSlider.java_SELECTED": "AutoImageSlider",
     "android-custom-viewE:/Android/Sdk/sources/android-33/android/widget/RelativeLayout.java_SELECTED": "RelativeLayout",
-    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -82,7 +79,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -189,6 +186,23 @@
       <option name="presentableId" value="Default" />
       <updated>1685611455301</updated>
     </task>
+    <task id="LOCAL-00001" summary="additional click url added">
+      <option name="closed" value="true" />
+      <created>1710938037650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710938037650</updated>
+    </task>
+    <task id="LOCAL-00002" summary="additional click url added">
+      <option name="closed" value="true" />
+      <created>1710938158070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710938158070</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +217,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="additional click url added" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional click url added" />
   </component>
 </project>

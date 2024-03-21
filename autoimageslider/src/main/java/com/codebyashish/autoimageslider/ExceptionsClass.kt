@@ -1,25 +1,13 @@
-package com.codebyashish.autoimageslider;
+package com.codebyashish.autoimageslider
 
-public class ExceptionsClass extends Exception{
+class ExceptionsClass : Exception {
+    constructor(message: String?) : super(message)
+    constructor(message: String?, cause: Throwable?) : super(message, cause)
 
-    public ExceptionsClass(String message) {
-        super(message);
-    }
+    var errorCode = 0
+        private set
 
-    public ExceptionsClass(String message, Throwable cause) {
-        super(message, cause);
-    }
-
-    private int errorCode;
-
-    public ExceptionsClass(String message, int errorCode) {
-        super(message);
-        this.errorCode = errorCode;
-    }
-
-
-
-    public int getErrorCode() {
-        return errorCode;
+    constructor(message: String?, errorCode: Int) : super(message) {
+        this.errorCode = errorCode
     }
 }

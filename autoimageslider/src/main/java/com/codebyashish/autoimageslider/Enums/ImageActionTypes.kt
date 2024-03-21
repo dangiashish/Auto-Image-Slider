@@ -1,12 +1,7 @@
-package com.codebyashish.autoimageslider.Enums;
+package com.codebyashish.autoimageslider.Enums
 
-
-public enum ImageActionTypes {
-    DOWN("down"), UP("up"), MOVE("move");
-
-    ImageActionTypes(String value) {
-
-    }
-
-
+enum class ImageActionTypes(value: String) {
+    DOWN("down"),
+    UP("up"),
+    MOVE("move")
 }

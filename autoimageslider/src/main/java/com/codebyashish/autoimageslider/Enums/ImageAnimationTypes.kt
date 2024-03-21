@@ -1,6 +1,6 @@
-package com.codebyashish.autoimageslider.Enums;
+package com.codebyashish.autoimageslider.Enums
 
-public enum ImageAnimationTypes {
+enum class ImageAnimationTypes(value: String) {
     ZOOM_IN("ZoomIn"),
     ZOOM_OUT("ZoomOut"),
     DEPTH_SLIDE("DepthSlide"),
@@ -14,8 +14,5 @@ public enum ImageAnimationTypes {
     ROTATE_DOWN("Rotate_Down"),
     GATE("Gate"),
     TOSS("Toss"),
-    FIDGET_SPINNER("FidgetSpinner");
-
-    ImageAnimationTypes(String value) {
-    }
+    FIDGET_SPINNER("FidgetSpinner")
 }
